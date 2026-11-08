@@ -229,3 +229,134 @@ footer p {
         padding: 1.5rem 2rem;
     }
 }
+
+/* ==========================================================================
+   TOUCHSTONE 4: Interactive Feature, Favorites & Form Validation Styles
+   ========================================================================== */
+.interactive-filter-section {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background-color: #fdfaf6;
+  border: 1px solid #e8dec8;
+  border-radius: 8px;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.filter-btn {
+  background-color: #ffffff;
+  color: #5c3a21;
+  border: 1px solid #b89b72;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+  background-color: #f4ede2;
+}
+
+.filter-btn.active {
+  background-color: #5c3a21;
+  color: #ffffff;
+  border-color: #5c3a21;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.catalog-card {
+  background: #ffffff;
+  border: 1px solid #decbb5;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.catalog-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.catalog-card-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #3b2413;
+}
+
+.catalog-price {
+  font-weight: bold;
+  color: #7b4f2c;
+  white-space: nowrap;
+}
+
+.catalog-desc {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.btn-fav {
+  width: 100%;
+  padding: 0.45rem;
+  background-color: transparent;
+  color: #6b4e33;
+  border: 1px dashed #6b4e33;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-fav:hover {
+  background-color: #fcf4eb;
+}
+
+.btn-fav.is-active {
+  background-color: #d4a373;
+  color: #ffffff;
+  border-style: solid;
+  border-color: #bc8a5f;
+}
+
+/* Form validation feedback */
+.field-error {
+  color: #b3261e;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.35rem;
+}
+
+.input-invalid {
+  border: 1.5px solid #b3261e !important;
+  background-color: #fff9f9;
+}
+
+.form-feedback-success {
+  background-color: #e6f4ea;
+  color: #137333;
+  border: 1px solid #ceead6;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
